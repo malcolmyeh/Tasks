@@ -1,5 +1,3 @@
-Simple task list application made using ReactJS.
-
 Check it out live at <a href="https://malcolmyeh.github.io/tasks/">https://malcolmyeh.github.io/tasks/</a>
 
 Current issues:
