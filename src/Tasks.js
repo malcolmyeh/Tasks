@@ -1,27 +1,34 @@
-import React from 'react'
+import React from "react";
 import FlipMove from "react-flip-move";
 
-const Tasks = ({tasks, deleteTask}) => {
-   const taskList = tasks.length ? (
-       tasks.map(task => {
-           return (
-            <FlipMove>
-               <div key={task.id} className = "center">
-                   <span onClick={() => {deleteTask(task.id)}}>{task.content}</span>
-               </div>
-            </FlipMove>)
-       })
-   ) : (
+const Tasks = ({ tasks, deleteTask }) => {
+  const taskList = tasks.length ? (
+    tasks.map(task => {
+      return (
         <FlipMove>
-            <p className="center">No tasks.</p>
+          <div key={task.id} className="center">
+            <span
+              onClick={() => {
+                deleteTask(task.id);
+              }}>
+              {task.content}
+            </span>
+          </div>
         </FlipMove>
-   )
-   return (
-       <div className = "task list">
-           <h4>{taskList}</h4>
-       </div>
-   )
+      );
+    })
+  ) : (
+    <FlipMove>
+      <p className="center">No tasks.</p>
+    </FlipMove>
+  );
+  return (
+    <div className="task list">
+      <FlipMove>
+        <h4>{taskList}</h4>
+      </FlipMove>
+    </div>
+  );
+};
 
-}
-
-export default Tasks
+export default Tasks;
