@@ -5,7 +5,7 @@ Current issues:
 
 
 Features to be added:
-- User authentication
-- Weather API, display weather information based on location
-- Firebase authentication 
-- Firebase store to save tasks througout multiple instances
+-[ ] User authentication
+-[ ] Weather API, display weather information based on location
+-[ ] Firebase authentication 
+-[ ] Firebase store to save tasks througout multiple instances
